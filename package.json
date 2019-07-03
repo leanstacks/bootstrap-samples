@@ -1,0 +1,16 @@
+{
+  "name": "bootstrap-samples",
+  "version": "1.0.0",
+  "description": "Bootstrap framework examples.",
+  "main": "index.js",
+  "repository": "git@github.com:leanstacks/bootstrap-samples.git",
+  "author": "Matt Warman <leanstacker@gmail.com>",
+  "license": "Apache-2.0",
+  "private": false,
+  "scripts": {
+    "start": "http-server -p 9000"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
