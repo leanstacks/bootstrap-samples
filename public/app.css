@@ -1,10 +1,3 @@
-.cs-navbar {
-  min-height: 4rem;
-  position: sticky;
-  top: 0;
-  z-index: 1100;
-}
-
 .cs-sidenav {
   order: 0;
 }
@@ -12,8 +5,8 @@
 @media (min-width: 768px) {
   .cs-sidenav {
     position: sticky;
-    top: 4rem;
-    height: calc(100vh - 4rem);
+    top: 0;
+    height: 100vh;
     z-index: 1000;
   }
 }
@@ -32,10 +25,6 @@
   }
 }
 
-.cs-content>h2[id]::before {
+.cs-content {
   order: 1;
-  display: block;
-  height: 6rem;
-  margin-top: -6rem;
-  content: "";
 }
