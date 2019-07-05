@@ -1,0 +1,41 @@
+.cs-navbar {
+  min-height: 4rem;
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+}
+
+.cs-sidenav {
+  order: 0;
+}
+
+@media (min-width: 768px) {
+  .cs-sidenav {
+    position: sticky;
+    top: 4rem;
+    height: calc(100vh - 4rem);
+    z-index: 1000;
+  }
+}
+
+.cs-sidenav a {
+  color: #fff;
+}
+
+.cs-sidenav a.active {
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .cs-sidenav>nav {
+    display: block !important;
+  }
+}
+
+.cs-content>h2[id]::before {
+  order: 1;
+  display: block;
+  height: 6rem;
+  margin-top: -6rem;
+  content: "";
+}
